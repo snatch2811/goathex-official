@@ -8,7 +8,7 @@ const TOKEN = {
   chain: "Base Chain",
   supply: "100,000,000,000",
   contract: "0x5cA22D1bAec4638a10Ef834d3Dba0A700FEe030d",
-  twitter: "https://x.com/GOATHEX_",
+  twitter: "#",
   telegram: "#",
   whitepaper: "#",
   dexscreener: "#",
