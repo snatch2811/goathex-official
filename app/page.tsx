@@ -375,16 +375,7 @@ export default function Home() {
     {copied ? "Copied" : "Copy Contract"}
   </button>
 
-  <a
-    href="https://basescan.org/address/0x5cA22D1bAec4638a10Ef834d3Dba0A700FEe030d"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="rounded-xl border border-red-500/50 px-6 py-4 font-black uppercase tracking-wide hover:bg-red-600/20"
-  >
-    View BaseScan
-  </a>
-</div>
-
+  
   <a
     href={TOKEN.basescan}
     target="_blank"
