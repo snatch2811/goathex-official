@@ -7,11 +7,13 @@ const TOKEN = {
   ticker: "$GHEX",
   chain: "Base Chain",
   supply: "100,000,000,000",
-  contract: "TBA",
+  contract: "0x5cA22D1bAec4638a10Ef834d3Dba0A700FEe030d",
   twitter: "https://x.com/GOATHEX_",
   telegram: "#",
   whitepaper: "#",
   dexscreener: "#",
+  basescan:
+    "https://basescan.org/address/0x5cA22D1bAec4638a10Ef834d3Dba0A700FEe030d",
 };
 
 const tokenomics = [
