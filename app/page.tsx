@@ -365,8 +365,6 @@ export default function Home() {
             <code className="break-all rounded-xl bg-black/50 p-4 text-zinc-300">
               {TOKEN.contract}
             </code>
-
-            <div className="flex flex-wrap gap-3">
  <div className="flex flex-wrap gap-3">
   <button
     onClick={copyContract}
@@ -375,7 +373,7 @@ export default function Home() {
     {copied ? "Copied" : "Copy Contract"}
   </button>
 
-  
+
   <a
     href={TOKEN.basescan}
     target="_blank"
