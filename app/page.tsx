@@ -201,11 +201,19 @@ export default function Home() {
           </a>
 
           <div className="hidden items-center gap-8 text-sm font-semibold text-zinc-400 md:flex">
-            <a href="#about" className="hover:text-red-400">About</a>
+            <a
+  href="#about"
+  className="font-bold uppercase tracking-wider text-zinc-300 transition-all duration-300 hover:text-red-400"
+>
+  About
+</a>
             <a href="#tokenomics" className="hover:text-red-400">Tokenomics</a>
             <a href="#contract" className="hover:text-red-400">Contract</a>
             <a href="#roadmap" className="hover:text-red-400">Roadmap</a>
-            <a href="/launch" className="hover:text-red-400">
+            <a
+  href="/launch"
+  className="hover:text-red-400 transition-all duration-300"
+>
   Launch Your Token
 </a>
           </div>
@@ -305,25 +313,6 @@ export default function Home() {
         <div className="relative hidden justify-center lg:flex">
   <div className="absolute inset-0 rounded-full bg-red-600/20 blur-[90px]" />
 
-  <div className="absolute left-0 top-12 z-20 rounded-2xl border border-red-500/30 bg-black/70 px-5 py-4 backdrop-blur">
-    <p className="text-xs uppercase tracking-widest text-zinc-500">Supply</p>
-    <h4 className="text-2xl font-black text-red-400">100B</h4>
-  </div>
-
-  <div className="absolute right-0 top-28 z-20 rounded-2xl border border-red-500/30 bg-black/70 px-5 py-4 backdrop-blur">
-    <p className="text-xs uppercase tracking-widest text-zinc-500">Network</p>
-    <h4 className="text-2xl font-black text-red-400">Base</h4>
-  </div>
-
-  <div className="absolute bottom-20 left-8 z-20 rounded-2xl border border-red-500/30 bg-black/70 px-5 py-4 backdrop-blur">
-    <p className="text-xs uppercase tracking-widest text-zinc-500">Tax</p>
-    <h4 className="text-2xl font-black text-red-400">0%</h4>
-  </div>
-
-  <div className="absolute bottom-10 right-8 z-20 rounded-2xl border border-red-500/30 bg-black/70 px-5 py-4 backdrop-blur">
-    <p className="text-xs uppercase tracking-widest text-zinc-500">Product</p>
-    <h4 className="text-2xl font-black text-red-400">Launchpad</h4>
-  </div>
 
   <img
     src="/logo.png"
@@ -332,7 +321,7 @@ export default function Home() {
   />
 </div>
       </section>
-      
+
       <section className="relative z-10 mx-auto max-w-7xl px-5 pb-20">
         <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-[32px] border border-red-500/25 bg-black/70 p-7 shadow-[0_0_60px_rgba(0,0,0,0.7)]">
