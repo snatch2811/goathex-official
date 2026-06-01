@@ -511,38 +511,54 @@ export default function Home() {
       </section>
 
       <section id="roadmap" className="relative z-10 mx-auto max-w-7xl px-5 py-24">
-        <div className="mb-14 text-center">
-          <p className="mb-3 font-black uppercase tracking-[0.35em] text-red-500">Roadmap</p>
-          <h2 className="text-5xl font-black md:text-6xl">The Rise Of GOATHEX</h2>
+  <div className="mb-16 text-center">
+    <p className="mb-3 font-black uppercase tracking-[0.35em] text-red-500">
+      Roadmap
+    </p>
+
+    <h2 className="text-5xl font-black md:text-6xl">
+      The Rise Of GOATHEX
+    </h2>
+
+    <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
+      A phased expansion from token identity to launchpad ecosystem.
+    </p>
+  </div>
+
+  <div className="relative mx-auto max-w-4xl">
+    <div className="absolute left-6 top-0 h-full w-[2px] bg-gradient-to-b from-red-600 via-red-900 to-transparent md:left-1/2 md:-translate-x-1/2" />
+
+    {roadmap.map((phase, index) => (
+      <div
+        key={phase.phase}
+        className={`relative mb-12 flex ${
+          index % 2 === 0 ? "md:justify-start" : "md:justify-end"
+        }`}
+      >
+        <div className="absolute left-6 top-8 z-10 h-5 w-5 -translate-x-1/2 rounded-full bg-red-600 shadow-[0_0_25px_rgba(255,0,0,0.8)] md:left-1/2" />
+
+        <div className="ml-14 w-full rounded-[28px] border border-red-500/20 bg-black/70 p-7 md:ml-0 md:w-[46%]">
+          <p className="font-black uppercase tracking-wider text-red-400">
+            {phase.phase}
+          </p>
+
+          <h3 className="mt-2 text-2xl font-black">
+            {phase.title}
+          </h3>
+
+          <ul className="mt-5 space-y-3 text-zinc-400">
+            {phase.items.map((item) => (
+              <li key={item} className="flex items-center gap-3">
+                <span className="h-2 w-2 rounded-full bg-red-500" />
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
-
-        <div className="relative grid gap-6 md:grid-cols-3">
-          <div className="absolute left-[16%] right-[16%] top-10 hidden h-[2px] bg-gradient-to-r from-red-600 via-red-900 to-red-600 md:block" />
-
-          {roadmap.map((phase, index) => (
-            <div key={phase.phase} className="relative rounded-[28px] border border-white/10 bg-black/70 p-7 transition hover:border-red-500/40">
-              <div className="mb-5 flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-red-600 text-xl font-black shadow-[0_0_25px_rgba(255,0,0,0.5)]">
-                  {index + 1}
-                </div>
-                <div>
-                  <p className="font-black text-red-400">{phase.phase}</p>
-                  <h3 className="text-xl font-black">{phase.title}</h3>
-                </div>
-              </div>
-
-              <ul className="space-y-3 text-zinc-400">
-                {phase.items.map((item) => (
-                  <li key={item} className="flex items-center gap-2">
-  <span className="h-2 w-2 rounded-full bg-red-500" />
-  {item}
-</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </section>
+      </div>
+    ))}
+  </div>
+</section>
       <section className="relative z-10 mx-auto max-w-7xl px-5 pb-20">
         <div className="rounded-[36px] border border-red-500/20 bg-white/[0.04] p-10 text-center">
           <h2 className="text-4xl font-black">Read The GOATHEX Whitepaper</h2>
