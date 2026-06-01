@@ -330,7 +330,64 @@ export default function Home() {
           </div>
         </div>
       </section>
+<section className="relative z-10 mx-auto max-w-7xl px-5 py-24">
+  <div className="rounded-3xl border border-red-500/20 bg-gradient-to-b from-red-950/20 to-black p-10 md:p-14">
 
+    <div className="mb-4 inline-flex rounded-full border border-red-500/30 bg-red-950/20 px-4 py-2 text-xs font-black uppercase tracking-[0.25em] text-red-400">
+      GOATHEX Launchpad
+    </div>
+
+    <h2 className="max-w-4xl text-4xl font-black uppercase md:text-6xl">
+      Launch Your Token On Base
+    </h2>
+
+    <p className="mt-6 max-w-3xl text-lg leading-relaxed text-zinc-400">
+      GOATHEX Launchpad provides creators and communities with a streamlined
+      way to launch tokens on Base using fair launch mechanics and liquidity
+      infrastructure powered by Flaunch.
+    </p>
+
+    <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="rounded-2xl border border-red-500/20 bg-black/40 p-5">
+        <div className="text-red-500 text-2xl font-black">Base</div>
+        <div className="mt-2 text-sm text-zinc-500">
+          Built for the Base ecosystem
+        </div>
+      </div>
+
+      <div className="rounded-2xl border border-red-500/20 bg-black/40 p-5">
+        <div className="text-red-500 text-2xl font-black">Fair</div>
+        <div className="mt-2 text-sm text-zinc-500">
+          Community-first launch model
+        </div>
+      </div>
+
+      <div className="rounded-2xl border border-red-500/20 bg-black/40 p-5">
+        <div className="text-red-500 text-2xl font-black">V4</div>
+        <div className="mt-2 text-sm text-zinc-500">
+          Uniswap V4 infrastructure
+        </div>
+      </div>
+
+      <div className="rounded-2xl border border-red-500/20 bg-black/40 p-5">
+        <div className="text-red-500 text-2xl font-black">24/7</div>
+        <div className="mt-2 text-sm text-zinc-500">
+          Launch anytime
+        </div>
+      </div>
+    </div>
+
+    <div className="mt-10">
+      <a
+        href="/launch"
+        className="inline-flex rounded-xl bg-red-600 px-8 py-4 font-black uppercase tracking-wider transition hover:bg-red-500"
+      >
+        Launch Your Token
+      </a>
+    </div>
+
+  </div>
+</section>
       <section id="tokenomics" className="relative z-10 mx-auto max-w-7xl px-5 py-20">
         <div className="mb-12 text-center">
           <p className="mb-3 font-black uppercase tracking-[0.35em] text-red-500">Tokenomics</p>
