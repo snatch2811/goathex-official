@@ -503,7 +503,7 @@ export default function Home() {
               A dark premium community token built on Base Chain.
             </p>
           </div>
-<div>
+  <div>
   <h4 className="mb-4 font-black uppercase tracking-wider text-red-400">
     Community
   </h4>
@@ -529,32 +529,18 @@ export default function Home() {
   </h4>
 
   <div className="space-y-3">
-    <a
-      href={TOKEN.basescan}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block text-zinc-400 hover:text-red-400"
-    >
+    <a href={TOKEN.basescan} target="_blank" rel="noopener noreferrer" className="block text-zinc-400 hover:text-red-400">
       BaseScan
     </a>
 
-    <a
-      href={TOKEN.dexscreener}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block text-zinc-400 hover:text-red-400"
-    >
+    <a href={TOKEN.dexscreener} target="_blank" rel="noopener noreferrer" className="block text-zinc-400 hover:text-red-400">
       DexScreener
     </a>
 
-    <a
-      href={TOKEN.whitepaper}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block text-zinc-400 hover:text-red-400"
-    >
+    <a href={TOKEN.whitepaper} target="_blank" rel="noopener noreferrer" className="block text-zinc-400 hover:text-red-400">
       Whitepaper
     </a>
+  </div>
   </div>
 </div>          
         <div className="mx-auto mt-10 max-w-7xl border-t border-white/10 pt-6 text-center text-sm text-zinc-600">
