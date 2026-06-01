@@ -252,7 +252,7 @@ export default function Home() {
       <section className="relative z-10 mx-auto grid min-h-[calc(100vh-80px)] max-w-7xl items-center gap-10 px-5 py-16 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="relative text-center lg:text-left">
           <div className="mb-5 inline-flex rounded-full border border-red-500/25 bg-red-500/10 px-4 py-2 text-sm font-semibold text-red-300">
-            Built on Base Chain • Supply 100B • Ticker {TOKEN.ticker}
+            Base Chain • 100B Supply • Launchpad Ready
           </div>
 
           <div className="relative mx-auto mb-8 flex max-w-xl justify-center lg:hidden">
@@ -268,7 +268,7 @@ export default function Home() {
           </h2>
 
           <p className="mt-6 text-2xl font-bold text-white">
-            The Darkest Meme. The Strongest Community.
+            The Apex Predator Of Base.
           </p>
 
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-zinc-400">
@@ -284,14 +284,14 @@ export default function Home() {
               rel="noopener noreferrer"
               className="rounded-xl bg-red-600 px-7 py-4 font-black uppercase tracking-wider text-white transition hover:bg-red-500 hover:shadow-[0_0_35px_rgba(255,0,0,0.5)]"
             >
-              Join The Cult
+              BUY $GHEX
             </a>
 
             <a
-              href={TOKEN.whitepaper}
+              href="/launch"
               className="rounded-xl border border-white/15 bg-white/5 px-7 py-4 font-black uppercase tracking-wider text-white transition hover:border-red-500/50 hover:bg-red-500/10"
             >
-              Whitepaper
+              LAUNCH YOUR TOKEN
             </a>
           </div>
 
@@ -428,7 +428,7 @@ export default function Home() {
     </p>
 
     <h2 className="text-5xl font-black md:text-6xl">
-      Built Beyond A Meme Token
+      The GOATHEX Ecosystem
     </h2>
   </div>
 
