@@ -411,6 +411,48 @@ export default function Home() {
 
   </div>
 </section>
+<section className="relative z-10 mx-auto max-w-7xl px-5 py-20">
+  <div className="mb-12 text-center">
+    <p className="mb-3 font-black uppercase tracking-[0.35em] text-red-500">
+      Ecosystem
+    </p>
+
+    <h2 className="text-5xl font-black md:text-6xl">
+      Built Beyond A Meme Token
+    </h2>
+
+    <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
+      GOATHEX is building a Base-powered ecosystem around community, token creation,
+      and launchpad infrastructure.
+    </p>
+  </div>
+
+  <div className="grid gap-6 md:grid-cols-3">
+    <div className="rounded-[30px] border border-red-500/20 bg-white/[0.04] p-8 transition hover:border-red-500/50 hover:bg-red-500/[0.06]">
+      <div className="mb-5 text-4xl">🐐</div>
+      <h3 className="text-2xl font-black uppercase">GOATHEX Token</h3>
+      <p className="mt-4 text-zinc-400">
+        The core community asset powering the GOATHEX identity, culture, and ecosystem growth.
+      </p>
+    </div>
+
+    <div className="rounded-[30px] border border-red-500/20 bg-white/[0.04] p-8 transition hover:border-red-500/50 hover:bg-red-500/[0.06]">
+      <div className="mb-5 text-4xl">🚀</div>
+      <h3 className="text-2xl font-black uppercase">Launchpad</h3>
+      <p className="mt-4 text-zinc-400">
+        A creator-focused token launch experience built for Base communities and powered by Flaunch.
+      </p>
+    </div>
+
+    <div className="rounded-[30px] border border-red-500/20 bg-white/[0.04] p-8 transition hover:border-red-500/50 hover:bg-red-500/[0.06]">
+      <div className="mb-5 text-4xl">🛠️</div>
+      <h3 className="text-2xl font-black uppercase">Future Tools</h3>
+      <p className="mt-4 text-zinc-400">
+        Future utilities for builders, holders, and communities launching inside the GOATHEX ecosystem.
+      </p>
+    </div>
+  </div>
+</section>
       <section id="tokenomics" className="relative z-10 mx-auto max-w-7xl px-5 py-20">
         <div className="mb-12 text-center">
           <p className="mb-3 font-black uppercase tracking-[0.35em] text-red-500">Tokenomics</p>
