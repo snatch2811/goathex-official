@@ -430,53 +430,39 @@ export default function Home() {
     <h2 className="text-5xl font-black md:text-6xl">
       Built Beyond A Meme Token
     </h2>
-<div className="grid gap-6 md:grid-cols-3">
-  {[
-    {
-      title: "GOATHEX Token",
-      label: "Core Asset",
-      desc: "The community-driven asset powering GOATHEX identity, culture, and ecosystem growth.",
-    },
-    {
-      title: "Launchpad",
-      label: "Create On Base",
-      desc: "A creator-focused token launch experience built for Base communities and powered by Flaunch.",
-    },
-    {
-      title: "Community",
-      label: "Builders & Holders",
-      desc: "A movement of holders, builders, and creators expanding the GOATHEX ecosystem together.",
-    },
-  ].map((item) => (
-    <div
-      key={item.title}
-      className="group rounded-[30px] border border-red-500/20 bg-gradient-to-b from-white/[0.06] to-black/60 p-8 transition hover:-translate-y-1 hover:border-red-500/60 hover:shadow-[0_0_45px_rgba(255,0,0,0.15)]"
-    >
-      <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-red-500/30 bg-red-500/10 text-xl font-black text-red-500">
-        {item.title.charAt(0)}
-      </div>
-
-      <p className="mb-3 text-xs font-black uppercase tracking-[0.3em] text-red-500">
-        {item.label}
-      </p>
-
-      <h3 className="text-2xl font-black uppercase">
-        {item.title}
-      </h3>
-
-      <p className="mt-4 leading-relaxed text-zinc-400">
-        {item.desc}
-      </p>
-    </div>
-  ))}
-</div>
-    <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
-      GOATHEX is building a Base-powered ecosystem around community, token creation,
-      and launchpad infrastructure.
-    </p>
   </div>
 
+  <div className="grid gap-5 md:grid-cols-3">
+    {[
+      {
+        title: "GOATHEX TOKEN",
+        subtitle: "Core Asset",
+      },
+      {
+        title: "LAUNCHPAD",
+        subtitle: "Create On Base",
+      },
+      {
+        title: "COMMUNITY",
+        subtitle: "Builders & Holders",
+      },
+    ].map((item) => (
+      <div
+        key={item.title}
+        className="rounded-[24px] border border-red-500/20 bg-black/60 p-6 transition hover:border-red-500/50"
+      >
+        <p className="text-xs font-black uppercase tracking-[0.3em] text-red-500">
+          {item.subtitle}
+        </p>
+
+        <h3 className="mt-3 text-2xl font-black uppercase">
+          {item.title}
+        </h3>
+      </div>
+    ))}
+  </div>
 </section>
+
       <section id="tokenomics" className="relative z-10 mx-auto max-w-7xl px-5 py-20">
         <div className="mb-12 text-center">
           <p className="mb-3 font-black uppercase tracking-[0.35em] text-red-500">Tokenomics</p>
