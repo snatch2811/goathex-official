@@ -4,13 +4,19 @@ export default function LaunchPage() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,0,0,0.14),transparent_58%)]" />
 
       <section className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center px-6 py-20 text-center">
-        <div className="mb-5 rounded-full border border-red-500/30 bg-red-950/20 px-5 py-2 text-xs font-black uppercase tracking-[0.25em] text-red-400">
-          Powered by GOATHEX & Flaunch
-        </div>
+        <img
+  src="/logo.png"
+  alt="GOATHEX"
+  className="mx-auto mb-6 h-32 w-32 object-contain"
+/>
 
-        <h1 className="max-w-5xl text-5xl font-black uppercase leading-none md:text-7xl">
-          Launch Your Token
-        </h1>
+<div className="mb-5 rounded-full border border-red-500/30 bg-red-950/20 px-5 py-2 text-xs font-black uppercase tracking-[0.25em] text-red-400">
+  Powered by GOATHEX & Flaunch
+</div>
+
+<h1 className="max-w-5xl text-5xl font-black uppercase leading-none md:text-7xl">
+  Launch Your Token
+</h1>
 
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-zinc-400 md:text-lg">
           Create and launch your token on Base through the GOATHEX ecosystem.
@@ -29,9 +35,14 @@ export default function LaunchPage() {
         </div>
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
-          <button className="rounded-xl bg-red-600 px-8 py-4 font-black uppercase tracking-wider transition hover:bg-red-500">
-            Launch Token
-          </button>
+          <a
+  href="https://flaunch.gg"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-xl bg-red-600 px-8 py-4 font-black uppercase tracking-wider transition hover:bg-red-500"
+>
+  Launch Token
+</a>
 
           <a
             href="/"
