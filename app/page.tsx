@@ -498,6 +498,20 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <section className="relative z-10 mx-auto max-w-7xl px-5 pb-20">
+        <div className="rounded-[36px] border border-red-500/20 bg-white/[0.04] p-10 text-center">
+          <h2 className="text-4xl font-black">Read The GOATHEX Whitepaper</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
+            Discover the vision, tokenomics, roadmap, and long-term direction of the GOATHEX ecosystem.
+          </p>
+          <a
+            href={TOKEN.whitepaper}
+            className="mt-7 inline-flex rounded-xl border border-red-500/60 px-7 py-4 font-black uppercase tracking-wide hover:bg-red-600/20"
+          >
+            Whitepaper TBA
+          </a>
+        </div>
+      </section>
 <section id="community" className="relative z-10 mx-auto max-w-7xl px-5 py-20">
   <div className="rounded-[36px] border border-red-500/20 bg-gradient-to-b from-red-950/20 to-black p-10 text-center">
     <p className="mb-3 font-black uppercase tracking-[0.35em] text-red-500">
@@ -528,20 +542,6 @@ export default function Home() {
     </div>
   </div>
 </section>
-      <section className="relative z-10 mx-auto max-w-7xl px-5 pb-20">
-        <div className="rounded-[36px] border border-red-500/20 bg-white/[0.04] p-10 text-center">
-          <h2 className="text-4xl font-black">Read The GOATHEX Whitepaper</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
-            Discover the vision, tokenomics, roadmap, and long-term direction of the GOATHEX ecosystem.
-          </p>
-          <a
-            href={TOKEN.whitepaper}
-            className="mt-7 inline-flex rounded-xl border border-red-500/60 px-7 py-4 font-black uppercase tracking-wide hover:bg-red-600/20"
-          >
-            Whitepaper TBA
-          </a>
-        </div>
-      </section>
 
       <footer className="relative z-10 border-t border-red-500/20 bg-black/90 px-5 py-12">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
