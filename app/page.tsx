@@ -150,6 +150,29 @@ export default function Home() {
 
   return (
     <main className="min-h-screen overflow-hidden bg-black text-white">
+      <header className="fixed left-0 right-0 top-0 z-50 border-b border-red-500/10 bg-black/80 backdrop-blur">
+  <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <a href="/" className="text-2xl font-black tracking-widest text-red-500">
+      GOATHEX
+    </a>
+
+    <nav className="hidden items-center gap-8 md:flex">
+      <a href="#tokenomics" className="font-bold uppercase tracking-wider text-zinc-300 hover:text-red-500">
+        Tokenomics
+      </a>
+      <a href="#roadmap" className="font-bold uppercase tracking-wider text-zinc-300 hover:text-red-500">
+        Roadmap
+      </a>
+      <a href="#community" className="font-bold uppercase tracking-wider text-zinc-300 hover:text-red-500">
+        Community
+      </a>
+    </nav>
+
+    <a href="/launch" className="rounded-xl bg-red-600 px-5 py-3 font-black uppercase tracking-wider transition hover:bg-red-500">
+      Launch Your Token
+    </a>
+  </div>
+</header>
       <div className="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(circle_at_35%_20%,rgba(255,0,0,0.22),transparent_36%),radial-gradient(circle_at_80%_45%,rgba(120,0,0,0.16),transparent_32%),linear-gradient(to_bottom,#000,#090000,#000)]" />
       <div className="pointer-events-none fixed inset-0 z-0 opacity-[0.035] bg-[linear-gradient(90deg,#fff_1px,transparent_1px),linear-gradient(#fff_1px,transparent_1px)] bg-[size:64px_64px]" />
 
