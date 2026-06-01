@@ -489,9 +489,12 @@ export default function Home() {
                 </div>
               </div>
 
-              <ul className="space-y-2 text-zinc-400">
+              <ul className="space-y-3 text-zinc-400">
                 {phase.items.map((item) => (
-                  <li key={item}>• {item}</li>
+                  <li key={item} className="flex items-center gap-2">
+  <span className="h-2 w-2 rounded-full bg-red-500" />
+  {item}
+</li>
                 ))}
               </ul>
             </div>
@@ -512,8 +515,9 @@ export default function Home() {
           </a>
         </div>
       </section>
-<section id="community" className="relative z-10 mx-auto max-w-7xl px-5 py-20">
+<section id="community" className="relative z-10 mx-auto max-w-7xl px-5 pb-20">
   <div className="rounded-[36px] border border-red-500/20 bg-gradient-to-b from-red-950/20 to-black p-10 text-center">
+
     <p className="mb-3 font-black uppercase tracking-[0.35em] text-red-500">
       Community
     </p>
@@ -523,21 +527,29 @@ export default function Home() {
     </h2>
 
     <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
-      Connect with the GOATHEX community across X, Telegram, and Discord.
-      Build, launch, and dominate Base together.
+      Build. Launch. Dominate. Connect with the GOATHEX community and become part of the next generation of Base builders.
     </p>
 
-    <div className="mt-8 flex justify-center gap-4">
-      <a href={TOKEN.twitter} target="_blank" rel="noopener noreferrer" className="flex h-14 w-14 items-center justify-center rounded-2xl border border-red-500/40 hover:bg-red-600/20">
-        <FaXTwitter size={24} />
+    <div className="mt-10 flex justify-center gap-4">
+      <a
+        href={TOKEN.twitter}
+        className="flex h-16 w-16 items-center justify-center rounded-2xl border border-red-500/30 bg-white/[0.03] transition hover:border-red-500 hover:bg-red-500/10"
+      >
+        <FaXTwitter size={28} />
       </a>
 
-      <a href={TOKEN.telegram} target="_blank" rel="noopener noreferrer" className="flex h-14 w-14 items-center justify-center rounded-2xl border border-red-500/40 hover:bg-red-600/20">
-        <FaTelegramPlane size={24} />
+      <a
+        href={TOKEN.telegram}
+        className="flex h-16 w-16 items-center justify-center rounded-2xl border border-red-500/30 bg-white/[0.03] transition hover:border-red-500 hover:bg-red-500/10"
+      >
+        <FaTelegramPlane size={28} />
       </a>
 
-      <a href={TOKEN.discord} target="_blank" rel="noopener noreferrer" className="flex h-14 w-14 items-center justify-center rounded-2xl border border-red-500/40 hover:bg-red-600/20">
-        <FaDiscord size={24} />
+      <a
+        href={TOKEN.discord}
+        className="flex h-16 w-16 items-center justify-center rounded-2xl border border-red-500/30 bg-white/[0.03] transition hover:border-red-500 hover:bg-red-500/10"
+      >
+        <FaDiscord size={28} />
       </a>
     </div>
   </div>
@@ -546,7 +558,11 @@ export default function Home() {
       <footer className="relative z-10 border-t border-red-500/20 bg-black/90 px-5 py-12">
         <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <img src="/logo.png" alt="GOATHEX" className="h-20 w-20 object-contain" />
+            <img
+  src="/logo.png"
+  alt="GOATHEX"
+  className="h-24 w-24 object-contain drop-shadow-[0_0_35px_rgba(255,0,0,0.8)]"
+/>
             <h3 className="mt-3 text-2xl font-black">GOATHEX</h3>
             <p className="mt-3 max-w-md text-zinc-500">
               A dark premium community token built on Base Chain.
