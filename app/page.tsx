@@ -210,14 +210,34 @@ export default function Home() {
 </a>
           </div>
 
-          <a
-            href={TOKEN.twitter}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-xl border border-red-500/70 px-5 py-2 text-sm font-bold uppercase tracking-wider text-white transition hover:bg-red-600 hover:shadow-[0_0_30px_rgba(255,0,0,0.45)]"
-          >
-            Follow X
-          </a>
+<div className="flex items-center gap-3">
+  <a
+    href={TOKEN.twitter}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex h-10 w-10 items-center justify-center rounded-xl border border-red-500/40 hover:bg-red-600/20"
+  >
+    <FaXTwitter size={18} />
+  </a>
+
+  <a
+    href={TOKEN.telegram}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex h-10 w-10 items-center justify-center rounded-xl border border-red-500/40 hover:bg-red-600/20"
+  >
+    <FaTelegramPlane size={18} />
+  </a>
+
+  <a
+    href={TOKEN.discord}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex h-10 w-10 items-center justify-center rounded-xl border border-red-500/40 hover:bg-red-600/20"
+  >
+    <FaDiscord size={18} />
+  </a>
+</div>
         </div>
       </nav>
 
