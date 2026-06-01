@@ -1,6 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { FaTelegramPlane, FaDiscord } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const TOKEN = {
   name: "GOATHEX",
@@ -10,6 +12,7 @@ const TOKEN = {
   contract: "0x5cA22D1bAec4638a10Ef834d3Dba0A700FEe030d",
   twitter: "#",
   telegram: "#",
+  discord: "#",
   whitepaper: "#",
   dexscreener: "#",
   basescan:
@@ -500,31 +503,60 @@ export default function Home() {
               A dark premium community token built on Base Chain.
             </p>
           </div>
+<div>
+  <h4 className="mb-4 font-black uppercase tracking-wider text-red-400">
+    Community
+  </h4>
 
-          <div>
-            <h4 className="mb-4 font-black uppercase tracking-wider text-red-400">Socials</h4>
-            <div className="space-y-3">
-              <a href={TOKEN.twitter} target="_blank" rel="noopener noreferrer" className="block text-zinc-400 hover:text-red-400">
-                X / Twitter
-              </a>
-              <a href={TOKEN.telegram} className="block text-zinc-400 hover:text-red-400">
-                Telegram TBA
-              </a>
-              <a href={TOKEN.dexscreener} className="block text-zinc-400 hover:text-red-400">
-                DexScreener TBA
-              </a>
-            </div>
-          </div>
+  <div className="flex gap-4">
+    <a href={TOKEN.twitter} target="_blank" rel="noopener noreferrer">
+      <FaXTwitter size={22} />
+    </a>
 
-          <div>
-            <h4 className="mb-4 font-black uppercase tracking-wider text-red-400">Disclaimer</h4>
-            <p className="text-sm leading-relaxed text-zinc-500">
-              GOATHEX is a community token. Nothing on this website is financial advice.
-              Always do your own research.
-            </p>
-          </div>
-        </div>
+    <a href={TOKEN.telegram} target="_blank" rel="noopener noreferrer">
+      <FaTelegramPlane size={22} />
+    </a>
 
+    <a href={TOKEN.discord} target="_blank" rel="noopener noreferrer">
+      <FaDiscord size={22} />
+    </a>
+  </div>
+</div>
+
+<div>
+  <h4 className="mb-4 font-black uppercase tracking-wider text-red-400">
+    Resources
+  </h4>
+
+  <div className="space-y-3">
+    <a
+      href={TOKEN.basescan}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block text-zinc-400 hover:text-red-400"
+    >
+      BaseScan
+    </a>
+
+    <a
+      href={TOKEN.dexscreener}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block text-zinc-400 hover:text-red-400"
+    >
+      DexScreener
+    </a>
+
+    <a
+      href={TOKEN.whitepaper}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block text-zinc-400 hover:text-red-400"
+    >
+      Whitepaper
+    </a>
+  </div>
+</div>          
         <div className="mx-auto mt-10 max-w-7xl border-t border-white/10 pt-6 text-center text-sm text-zinc-600">
           © 2026 GOATHEX • Built On Base Chain • Rule The Shadows
         </div>
