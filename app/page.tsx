@@ -372,13 +372,6 @@ export default function Home() {
   >
     {copied ? "Copied" : "Copy Contract"}
   </button>
-<a
-  href="/launch"
-  className="rounded-xl bg-red-600 px-6 py-4 font-black uppercase tracking-wide transition hover:bg-red-500"
->
-  Launch Engine
-</a>
-
   <a
     href={TOKEN.basescan}
     target="_blank"
@@ -387,6 +380,12 @@ export default function Home() {
   >
     View BaseScan
   </a>
+  <a
+  href="/launch"
+  className="rounded-xl bg-red-600 px-6 py-4 font-black uppercase tracking-wide transition hover:bg-red-500"
+>
+  Launch Engine
+</a>
 </div>
           </div>
         </div>
