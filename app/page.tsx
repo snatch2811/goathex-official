@@ -498,7 +498,36 @@ export default function Home() {
           ))}
         </div>
       </section>
+<section id="community" className="relative z-10 mx-auto max-w-7xl px-5 py-20">
+  <div className="rounded-[36px] border border-red-500/20 bg-gradient-to-b from-red-950/20 to-black p-10 text-center">
+    <p className="mb-3 font-black uppercase tracking-[0.35em] text-red-500">
+      Community
+    </p>
 
+    <h2 className="text-4xl font-black md:text-6xl">
+      Join The GOATHEX Movement
+    </h2>
+
+    <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
+      Connect with the GOATHEX community across X, Telegram, and Discord.
+      Build, launch, and dominate Base together.
+    </p>
+
+    <div className="mt-8 flex justify-center gap-4">
+      <a href={TOKEN.twitter} target="_blank" rel="noopener noreferrer" className="flex h-14 w-14 items-center justify-center rounded-2xl border border-red-500/40 hover:bg-red-600/20">
+        <FaXTwitter size={24} />
+      </a>
+
+      <a href={TOKEN.telegram} target="_blank" rel="noopener noreferrer" className="flex h-14 w-14 items-center justify-center rounded-2xl border border-red-500/40 hover:bg-red-600/20">
+        <FaTelegramPlane size={24} />
+      </a>
+
+      <a href={TOKEN.discord} target="_blank" rel="noopener noreferrer" className="flex h-14 w-14 items-center justify-center rounded-2xl border border-red-500/40 hover:bg-red-600/20">
+        <FaDiscord size={24} />
+      </a>
+    </div>
+  </div>
+</section>
       <section className="relative z-10 mx-auto max-w-7xl px-5 pb-20">
         <div className="rounded-[36px] border border-red-500/20 bg-white/[0.04] p-10 text-center">
           <h2 className="text-4xl font-black">Read The GOATHEX Whitepaper</h2>
