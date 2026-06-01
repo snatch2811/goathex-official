@@ -430,38 +430,52 @@ export default function Home() {
     <h2 className="text-5xl font-black md:text-6xl">
       Built Beyond A Meme Token
     </h2>
+<div className="grid gap-6 md:grid-cols-3">
+  {[
+    {
+      title: "GOATHEX Token",
+      label: "Core Asset",
+      desc: "The community-driven asset powering GOATHEX identity, culture, and ecosystem growth.",
+    },
+    {
+      title: "Launchpad",
+      label: "Create On Base",
+      desc: "A creator-focused token launch experience built for Base communities and powered by Flaunch.",
+    },
+    {
+      title: "Community",
+      label: "Builders & Holders",
+      desc: "A movement of holders, builders, and creators expanding the GOATHEX ecosystem together.",
+    },
+  ].map((item) => (
+    <div
+      key={item.title}
+      className="group rounded-[30px] border border-red-500/20 bg-gradient-to-b from-white/[0.06] to-black/60 p-8 transition hover:-translate-y-1 hover:border-red-500/60 hover:shadow-[0_0_45px_rgba(255,0,0,0.15)]"
+    >
+      <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-red-500/30 bg-red-500/10 text-xl font-black text-red-500">
+        {item.title.charAt(0)}
+      </div>
 
+      <p className="mb-3 text-xs font-black uppercase tracking-[0.3em] text-red-500">
+        {item.label}
+      </p>
+
+      <h3 className="text-2xl font-black uppercase">
+        {item.title}
+      </h3>
+
+      <p className="mt-4 leading-relaxed text-zinc-400">
+        {item.desc}
+      </p>
+    </div>
+  ))}
+</div>
     <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
       GOATHEX is building a Base-powered ecosystem around community, token creation,
       and launchpad infrastructure.
     </p>
   </div>
 
-  <div className="grid gap-6 md:grid-cols-3">
-    <div className="rounded-[30px] border border-red-500/20 bg-white/[0.04] p-8 transition hover:border-red-500/50 hover:bg-red-500/[0.06]">
-      <div className="mb-5 text-4xl">🐐</div>
-      <h3 className="text-2xl font-black uppercase">GOATHEX Token</h3>
-      <p className="mt-4 text-zinc-400">
-        The core community asset powering the GOATHEX identity, culture, and ecosystem growth.
-      </p>
-    </div>
-
-    <div className="rounded-[30px] border border-red-500/20 bg-white/[0.04] p-8 transition hover:border-red-500/50 hover:bg-red-500/[0.06]">
-      <div className="mb-5 text-4xl">🚀</div>
-      <h3 className="text-2xl font-black uppercase">Launchpad</h3>
-      <p className="mt-4 text-zinc-400">
-        A creator-focused token launch experience built for Base communities and powered by Flaunch.
-      </p>
-    </div>
-
-    <div className="rounded-[30px] border border-red-500/20 bg-white/[0.04] p-8 transition hover:border-red-500/50 hover:bg-red-500/[0.06]">
-      <div className="mb-5 text-4xl">🛠️</div>
-      <h3 className="text-2xl font-black uppercase">Future Tools</h3>
-      <p className="mt-4 text-zinc-400">
-        Future utilities for builders, holders, and communities launching inside the GOATHEX ecosystem.
-      </p>
-    </div>
-  </div>
 </section>
       <section id="tokenomics" className="relative z-10 mx-auto max-w-7xl px-5 py-20">
         <div className="mb-12 text-center">
@@ -531,11 +545,11 @@ export default function Home() {
     </h2>
 
     <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
-      A phased expansion from token identity to launchpad ecosystem.
+      From dark community token to Base-powered launchpad ecosystem.
     </p>
   </div>
 
-  <div className="relative mx-auto max-w-4xl">
+  <div className="relative mx-auto max-w-5xl">
     <div className="absolute left-6 top-0 h-full w-[2px] bg-gradient-to-b from-red-600 via-red-900 to-transparent md:left-1/2 md:-translate-x-1/2" />
 
     {roadmap.map((phase, index) => (
@@ -547,8 +561,8 @@ export default function Home() {
       >
         <div className="absolute left-6 top-8 z-10 h-5 w-5 -translate-x-1/2 rounded-full bg-red-600 shadow-[0_0_25px_rgba(255,0,0,0.8)] md:left-1/2" />
 
-        <div className="ml-14 w-full rounded-[28px] border border-red-500/20 bg-black/70 p-7 md:ml-0 md:w-[46%]">
-          <p className="font-black uppercase tracking-wider text-red-400">
+        <div className="ml-14 w-full rounded-[30px] border border-red-500/20 bg-black/75 p-7 transition hover:border-red-500/50 hover:shadow-[0_0_40px_rgba(255,0,0,0.12)] md:ml-0 md:w-[46%]">
+          <p className="font-black uppercase tracking-[0.25em] text-red-400">
             {phase.phase}
           </p>
 
@@ -559,7 +573,7 @@ export default function Home() {
           <ul className="mt-5 space-y-3 text-zinc-400">
             {phase.items.map((item) => (
               <li key={item} className="flex items-center gap-3">
-                <span className="h-2 w-2 rounded-full bg-red-500" />
+                <span className="h-2 w-2 rounded-full bg-red-500 shadow-[0_0_10px_rgba(255,0,0,0.8)]" />
                 {item}
               </li>
             ))}
@@ -570,19 +584,39 @@ export default function Home() {
   </div>
 </section>
       <section className="relative z-10 mx-auto max-w-7xl px-5 pb-20">
-        <div className="rounded-[36px] border border-red-500/20 bg-white/[0.04] p-10 text-center">
-          <h2 className="text-4xl font-black">Read The GOATHEX Whitepaper</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
-            Discover the vision, tokenomics, roadmap, and long-term direction of the GOATHEX ecosystem.
-          </p>
-          <a
-            href={TOKEN.whitepaper}
-            className="mt-7 inline-flex rounded-xl border border-red-500/60 px-7 py-4 font-black uppercase tracking-wide hover:bg-red-600/20"
-          >
-            Whitepaper TBA
-          </a>
+  <div className="rounded-[36px] border border-red-500/20 bg-gradient-to-b from-white/[0.05] to-black p-10 text-center">
+    <p className="mb-3 font-black uppercase tracking-[0.35em] text-red-500">
+      Whitepaper
+    </p>
+
+    <h2 className="text-4xl font-black md:text-6xl">
+      GOATHEX Vision Document
+    </h2>
+
+    <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
+      The whitepaper will cover the GOATHEX vision, ecosystem direction,
+      tokenomics, launchpad plans, and community expansion roadmap.
+    </p>
+
+    <div className="mx-auto mt-10 grid max-w-4xl gap-4 md:grid-cols-4">
+      {["Vision", "Tokenomics", "Launchpad", "Roadmap"].map((item) => (
+        <div
+          key={item}
+          className="rounded-2xl border border-red-500/20 bg-black/50 p-5 font-black uppercase tracking-wider text-zinc-300"
+        >
+          {item}
         </div>
-      </section>
+      ))}
+    </div>
+
+    <a
+      href={TOKEN.whitepaper}
+      className="mt-10 inline-flex rounded-xl border border-red-500/60 px-7 py-4 font-black uppercase tracking-wide transition hover:bg-red-600/20"
+    >
+      Whitepaper Coming Soon
+    </a>
+  </div>
+</section>
 <section id="community" className="relative z-10 mx-auto max-w-7xl px-5 pb-20">
   <div className="rounded-[36px] border border-red-500/20 bg-gradient-to-b from-red-950/20 to-black p-10 text-center">
 
